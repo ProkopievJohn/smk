@@ -1,0 +1,13 @@
+<form role="newcomment" name="newcomment" novalidate>
+	<fieldset class="form-group">
+		<label for="rate">Rate:</label>
+		<select name="rate" id="rate" ng-model="comment.rate" required>
+			<option value="">---Please select---</option>
+			<option ng-repeat="o in [5,4,3,2,1]" value="{{ o }}">Option {{ o }}</option>
+		</select><br>
+	</fieldset>
+	<fieldset class="form-group">
+		<textarea name="text" id="text" rows="5" ng-model="comment.text" class="new-comment-text" required></textarea>
+	</fieldset>
+	<button type="submit" ng-disabled="newcomment.$invalid" ng-click="mycomment(product.id, comment)" class="my-comment">comment</button>
+</form>

@@ -1,0 +1,12 @@
+<form role="form" name="loginForm" novalidate>
+	<fieldset class="form-group">
+		<label for="username">Username:</label>
+		<input type="text" class="username" ng-model="user.username" required>
+	</fieldset>
+	<fieldset class="form-group">
+		<label for="password">Password:</label>
+		<input type="password" class="password" ng-model="user.password" required>
+	</fieldset>
+		<button type="submit" ng-disabled="loginForm.$invalid" ng-click="login(user)" class="login">Login</button>
+		<button type="submit" ng-disabled="loginForm.$invalid" ng-click="register(user)" class="register">register</button>
+</form>

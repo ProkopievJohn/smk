@@ -1,0 +1,10 @@
+<ul>
+	<li ng-repeat="comment in comments[product.id - 1]" class="comment-block">
+		<div class="comment-user">
+			<h5 class="comment-title">{{ comment.created_by.username }}</h5>
+			<p class="comment-date">Date: {{ comment.created_at | date:'yyyy/MM/dd' }}</p>
+			<p class="comment-rate">Rate: {{ comment.rate }}</p>
+		</div>
+		<p class="comment-text">Comment: {{ comment.text }}</p>
+	</li>
+</ul>

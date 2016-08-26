@@ -1,0 +1,25 @@
+{
+	"name": "LightIT-test",
+	"version": "0.1.0",
+	"description": "LightIT test for FED",
+	"author": "Prokopiev Ivan <ProkopievJohn@gmail.com>",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+	},
+	"license": "ISC",
+	"dependencies": {
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^3.1.1",
+		"gulp-concat": "^2.6.0",
+		"gulp-csscomb": "^3.0.7",
+		"gulp-cssmin": "^0.1.7",
+		"gulp-html-prettify": "0.0.1",
+		"gulp-jade": "^1.1.0",
+		"gulp-server-livereload": "^1.8.2",
+		"gulp-stylus": "^2.5.0",
+		"gulp-uglify": "^2.0.0",
+		"gulp-uncss": "^1.0.6",
+		"jade": "^1.11.0",
+		"wiredep": "^4.0.0"
+	}
+}

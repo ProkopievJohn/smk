@@ -1,0 +1,14 @@
+<ul>
+	<li ng-repeat="product in products" class="list-product">
+		<div class="product-block">
+			<h4 class="product-title"> {{ product.title }} </h4>
+			<img src="http://smktesting.herokuapp.com/static/{{ product.img }}" alt="{{ product.img }}">
+			<p class="product-text">{{ product.text }}</p>
+		</div>
+		<div class="comments">
+			<h6 class="comments-title">comments</h6>
+			<div comments-directive></div>
+			<div ng-show="tf" newcomment-directive class="new-comment"></div>
+		</div>
+	</li>
+</ul>
